@@ -11,7 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "gruvbox"
+    colorscheme = "srcery"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -22,7 +22,9 @@
     statusline_iseparator = "arrow"
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
-    enable_statusline_mode = false
+    enable_statusline_mode = true
+        relativenumber = false
+    default_indent = 4
 
 # Enable autocomplete layer
 [[layers]]
@@ -34,3 +36,40 @@ auto_completion_tab_key_behavior = "smart"
 name = 'shell'
 default_position = 'top'
 default_height = 30
+
+[[layers]]
+name = 'tools'
+
+[[layers]]
+name = 'denite'
+
+[[layers]]
+name = 'colorscheme'
+
+[[layers]]
+name = 'edit'
+
+[[layers]]
+name = 'format'
+
+[[layers]]
+name = "treesitter"
+
+[[layers]]
+name = 'lang#c'
+enable_clang_syntax_highlight = true
+
+[[layers]]
+name = 'lsp'
+enabled_clients = ['clangd']
+filetypes = [
+  "c",
+  "cpp"
+]
+[layers.override_cmd]
+  c = ["clangd"]
+
+  # 添加自定义主题：https://github.com/mhartington/oceanic-next
+[[custom_plugins]]
+  repo = "folke/tokyonight.nvim"
+  merged = 0
