@@ -31,20 +31,13 @@ bootstrap_after  = "myspacevim#after"
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
+auto_completion_return_key_behavior = "nil"
 auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
 name = 'shell'
 default_position = 'top'
 default_height = 30
-
-[[layers]]
-name = 'core'
-[[layers]]
-name = 'core#tabline'
-[[layers]]
-name = 'core#statusline'
 
 [[layers]]
 name = 'tools'
