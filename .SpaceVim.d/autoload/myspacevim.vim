@@ -10,7 +10,7 @@ function! s:set_neovim_after() abort
   inoremap <c-u> <c-c><right>d^i
   inoremap <c-k> <c-c><right>d$i
   inoremap <c-y> <c-r>"
-  inoremap <c-o> <end><cr>
+  " inoremap <c-o> <end><cr>
 
     " visual mode
   vnoremap <c-a> 0
